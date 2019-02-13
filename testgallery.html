@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Test Gallery
+	</title>
+	<link rel="stylesheet" type="text/css" href="jQuerry.gallery.css">
+</head>
+<body>
+
+<div></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jQuery.gallery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		//example JSON objects
+		const JSONbase = [{"src" : "https://wedding.pl/inspiracje/wp-content/uploads/zdjecia-followmeto-murada-osmanna/followmeto-zobacz-slynne-zdjecia-z-instagrama-fot-instagram-muradosmann-1.jpg", "alt" : "Photo 1"},{"src" : "https://c1.momondo.net/content/articles/43/4366d257-8bf5-38bf-a9c5-93edf0d97d62.jpg", "alt" : "Photo 2"},{"src" : "http://polandweddings.com/wp-content/uploads/2016/08/wedding-photos-follow-me-to-couple-murad-osmann-natalia-zakharova-12.jpg", "alt" : "The Champion"}];
+		
+		$("div").galleryStart(JSONbase);
+	});
+</script>
+
+
+</body>
+</html>
